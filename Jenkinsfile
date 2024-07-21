@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git '/home/JenkinsDependencyCheckTest'
+				git url: 'https://github.com/BenjaminTham-SIT/simple-node-js-react-npm-app.git', branch: 'master'
 			}
 		}
 
